@@ -1,0 +1,3 @@
+D:/HuaweiMoveData/Users/13565650660/Desktop/sfSnake-master/build/_deps/sfml-subbuild/CMakeFiles/sfml-populate.dir
+D:/HuaweiMoveData/Users/13565650660/Desktop/sfSnake-master/build/_deps/sfml-subbuild/CMakeFiles/edit_cache.dir
+D:/HuaweiMoveData/Users/13565650660/Desktop/sfSnake-master/build/_deps/sfml-subbuild/CMakeFiles/rebuild_cache.dir
