@@ -1,5 +1,5 @@
 #include <SFML/Graphics.hpp>
-#include<iostream>
+
 #include "Obstacle.h"
 #include "Game.h"
 

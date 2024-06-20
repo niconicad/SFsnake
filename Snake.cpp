@@ -1,7 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include <cmath>
 #include <memory>
-#include <iostream>
 
 #include "Snake.h"
 #include "Game.h"
@@ -70,7 +69,7 @@ void Snake::handleInput(sf::RenderWindow &window)
 	else if (!posecount && sf::Mouse::isButtonPressed(sf::Mouse::Left))
 	{
 		sf::Vector2f mpos = static_cast<sf::Vector2f>(sf::Mouse::getPosition(window));//相对窗口的位置
-		//if(mpos.x >= 0 && mpos.y >= 0 && mpos.x <= Game::Width && mpos.y <= Game::Height)
+		if(mpos.x >= 0 && mpos.y >= 0 && mpos.x <= Game::Width && mpos.y <= Game::Height)
 		//超出窗口不更新
 		{
 			sf::Vector2f rm = mpos -nodes_[0].getPosition();//相对蛇头的位置
@@ -124,25 +123,8 @@ void Snake::checkFruitCollisions(std::vector<Fruit>& fruits)
 
 void Snake::grow(int x)
 {
-	// switch (direction_)
-	// {
-	// case Direction::Up:
-	// 	nodes_.push_back(SnakeNode(sf::Vector2f(nodes_[nodes_.size() - 1].getPosition().x,
-	// 		nodes_[nodes_.size() - 1].getPosition().y + SnakeNode::Height)));
-	// 	break;
-	// case Direction::Down:
-	// 	nodes_.push_back(SnakeNode(sf::Vector2f(nodes_[nodes_.size() - 1].getPosition().x,
-	// 		nodes_[nodes_.size() - 1].getPosition().y - SnakeNode::Height)));
-	// 	break;
-	// case Direction::Left:
-	// 	nodes_.push_back(SnakeNode(sf::Vector2f(nodes_[nodes_.size() - 1].getPosition().x + SnakeNode::Width,
-	// 		nodes_[nodes_.size() - 1].getPosition().y)));
-	// 	break;
-	// case Direction::Right:
-	// 	nodes_.push_back(SnakeNode(sf::Vector2f(nodes_[nodes_.size() - 1].getPosition().x - SnakeNode::Width,
-	// 		nodes_[nodes_.size() - 1].getPosition().y)));
-	// 	break;
-	// }
+
+	//沿最后两个节点的方向添加身体节点
 	SnakeNode last = nodes_[nodes_.size() - 1],
 			  last_s = nodes_[nodes_.size() - 2];
 	sf::Vector2f direc = last_s.getPosition() - last.getPosition();

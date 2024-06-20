@@ -22,11 +22,10 @@ public:
 
 	const sf::Vector2f& getPosition() const;
 
-	/// @brief 记得GIA或有之前哪里那个
-	sf::CircleShape shape_;
+	
 private:
 	static const float Radius;
-
+	sf::CircleShape shape_;
 	int color;//0黑 1褐 2红 3蓝 4绿
 };
 }

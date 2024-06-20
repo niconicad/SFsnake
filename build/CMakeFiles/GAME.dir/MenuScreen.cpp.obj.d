@@ -260,7 +260,6 @@ CMakeFiles/GAME.dir/MenuScreen.cpp.obj: \
  D:/winlibs-x86_64-/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/atomic_base.h \
  D:/winlibs-x86_64-/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/atomic_lockfree_defines.h \
  D:/winlibs-x86_64-/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward/auto_ptr.h \
- D:/winlibs-x86_64-/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/iostream \
  D:\HuaweiMoveData\Users\13565650660\Desktop\sfSnake-master\GameScreen.h \
  D:/winlibs-x86_64-/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/random \
  D:/winlibs-x86_64-/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/cmath \

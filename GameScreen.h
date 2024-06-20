@@ -23,7 +23,7 @@ public:
 
     static const int b_b = 5;
     static const int r_g_b = 15;
-	static const int ob_size = 4;
+	static int ob_size;
 	bool init_flag = false;
 	std::vector<sf::Texture> textures;
 

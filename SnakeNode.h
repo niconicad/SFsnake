@@ -30,9 +30,6 @@ public:
 	sf::Vector2f getPosition() const;
 	sf::FloatRect getBounds() const;
 
-	//float getDistance(const SnakeNode& node);
-	// static const float Width;
-	// static const float Height;
 	static const float Radius;
 
 	private:

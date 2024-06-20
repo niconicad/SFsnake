@@ -41,7 +41,7 @@ private:
 	int h;
 	sf::CircleShape headSample;
 	sf::CircleShape bodySample;
-	int style;
+	int style; //0 snowfield 1 cave 2 grassland
 };
 }
 

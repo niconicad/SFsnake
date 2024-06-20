@@ -248,7 +248,6 @@ CMakeFiles/GAME.dir/SnakeNode.cpp.obj: \
  D:/HuaweiMoveData/Users/13565650660/Desktop/sfSnake-master/build/_deps/sfml-src/include/SFML/Graphics/Sprite.hpp \
  D:/HuaweiMoveData/Users/13565650660/Desktop/sfSnake-master/build/_deps/sfml-src/include/SFML/Graphics/Text.hpp \
  D:/HuaweiMoveData/Users/13565650660/Desktop/sfSnake-master/build/_deps/sfml-src/include/SFML/Graphics/VertexBuffer.hpp \
- D:/winlibs-x86_64-/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/iostream \
  D:/winlibs-x86_64-/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/cmath \
  D:/winlibs-x86_64-/mingw64/x86_64-w64-mingw32/include/math.h \
  D:/winlibs-x86_64-/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/specfun.h \

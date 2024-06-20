@@ -1,5 +1,5 @@
 #include <SFML/Graphics.hpp>
-#include <iostream>
+
 #include "BackGround.h"
 #include "Game.h"
 
@@ -16,12 +16,13 @@ BackGround::BackGround():color(0),tex(0)
 
 void BackGround::setTexture(int tex)
 {
-    std::cout<<tex<<std::endl;
     switch(tex % 5)
     {
         case 0:
             shape_.setTexture(sf::Texture());
             shape_.setColor(sf::Color::White);
+            shape_.setScale(1,1);
+            shape_.setTextureRect(sf::IntRect(0,0,Game::Width,Game::Height));
             tex = 0;
             break;
         case 1:

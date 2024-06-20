@@ -1,7 +1,7 @@
 #include <SFML/Graphics.hpp>
 
 #include <memory>
-#include <iostream>
+
 #include "GameScreen.h"
 #include "MenuScreen.h"
 #include "Game.h"
@@ -51,11 +51,6 @@ MenuScreen::MenuScreen()
 		text_[3].setFillColor(sf::Color(0,153,76));
 		text_[3].setPosition(sf::Vector2f(SampleEdge/2,SampleEdge*5/3));
 	}
-	// text_.setFont(font_);
-	// text_.setString(
-	// 	"\n\n\n\n\nPress [SPACE] to play"
-	// 	"\n\nPress [ESC] to quit"
-	// 	"\n\nPress [Enter] to take an adventure!!");
 
 	snakeText_.setFont(font_);
 	snakeText_.setString("Snake!");
@@ -76,16 +71,6 @@ MenuScreen::MenuScreen()
 	snakeText_.setOrigin(snakeTextBounds.left + snakeTextBounds.width / 2,
 		snakeTextBounds.top + snakeTextBounds.height / 2);
 	snakeText_.setPosition(Game::Width / 2, Game::Height / 4);	
-
-	// text_.setCharacterSize(50);
-	// text_.setFillColor(sf::Color(65,105,225));
-
-	// sf::FloatRect textBounds = text_.getLocalBounds();
-	// text_.setOrigin(textBounds.left + textBounds.width / 2,
-	// 	textBounds.top + textBounds.height / 2);
-	// text_.setPosition(Game::Width / 2, Game::Height / 2);
-
-
 
 	//设置背景图片
 	if (!Game::adventure)
@@ -162,7 +147,6 @@ void MenuScreen::handleInput(sf::RenderWindow& window)
 		}
 	if (sf::Mouse::isButtonPressed(sf::Mouse::Left))//将按下与之前的放于上面状态区分开，防止数据过多
 	{
-		//std::cout<< p.x <<" "<<p.y<<"\n";
 		if(text_[0].getGlobalBounds().contains(p.x,p.y))
 		{
 			if(!Game::adventure)
@@ -209,31 +193,6 @@ void MenuScreen::handleInput(sf::RenderWindow& window)
 			delay = time;
 		}
 	}
-	// else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
-	// {
-	// 	if(!Game::adventure)
-	// 	{
-	// 		Game::Back->setTexture(BackTex);
-	// 		Game::Back->setColor(BackColor);
-	// 	}	//先放纹理再上色
-	// 	else
-	// 	{
-	// 		Game::world = style;
-	// 		Game::Back->setColor(0);//清除颜色
-	// 		Game::Back->setTexture(style + 2);
-	// 	}
-	// 	Game::setBody(h);
-	// 	Game::setHead(h);
-	// 	Game::Screen = std::make_shared<GameScreen>();
-	// }
-	// else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
-	// 	window.close();
-	// else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Return)&&!delay)
-	// {
-	// 	Game::adventure = !Game::adventure;
-	// 	delay = time;
-	// 	Game::Screen = std::make_shared<MenuScreen>();
-	// }
 	if(delay>0)
 		--delay;
 }
@@ -281,7 +240,6 @@ void MenuScreen::render(sf::RenderWindow& window)
 
 void MenuScreen::changeColor()
 {
-	std::cout<<BackColor;
 	BackColor = (BackColor + 1) % 3;
 	switch(BackColor)
     {

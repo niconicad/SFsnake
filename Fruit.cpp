@@ -1,5 +1,5 @@
 #include <SFML/Graphics.hpp>
-#include<iostream>
+
 #include "Fruit.h"
 
 using namespace sfSnake;
@@ -46,9 +46,4 @@ void Fruit::setColor(int x)
 const sf::Vector2f& Fruit::getPosition() const
 {
 	return shape_.getPosition();
-}
-bool Fruit::SamePlace(const Fruit& f)
-{
-	//std::cout<< getBounds().intersects(f.getBounds());
-	return getBounds().intersects(f.getBounds());
 }

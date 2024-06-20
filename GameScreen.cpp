@@ -1,5 +1,5 @@
 #include <SFML/Graphics.hpp>
-#include <iostream>
+
 #include <random>
 #include <memory>
 
@@ -8,6 +8,7 @@
 #include "Game.h"
 
 using namespace sfSnake;
+int GameScreen::ob_size = 4;
 
 GameScreen::GameScreen() : snake_()
 {
